@@ -50,3 +50,48 @@ body {
 .site-content {
     padding: 2rem;
 }
+/* Hero Section Styles */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh; /* Takes up 60% of the viewport height */
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffffff; /* Keep it clean and bright */
+}
+
+.hero-content {
+    max-width: 800px; /* Constrains the width for better readability */
+}
+
+.hero-headline {
+    font-size: 3.5rem; /* Large, attention-grabbing text */
+    font-weight: 800; /* Bold and impactful */
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.hero-tagline {
+    font-size: 1.25rem;
+    color: #555;
+    margin-bottom: 2.5rem;
+}
+
+.hero-cta-button {
+    display: inline-block;
+    background-color: #0073aa; /* WordPress blue for consistency */
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease;
+}
+
+.hero-cta-button:hover {
+    background-color: #005a87; /* A darker shade on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
