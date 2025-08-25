@@ -95,3 +95,59 @@ body {
     background-color: #005a87; /* A darker shade on hover */
     transform: translateY(-2px); /* Subtle lift effect */
 }
+
+/* AI Prompt Form Styles */
+.ai-prompt-form {
+    margin-top: 2.5rem;
+}
+
+.ai-prompt-textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-family: inherit; /* Use the same font as the body */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: vertical; /* Allow vertical resizing */
+    margin-bottom: 1.5rem;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.ai-prompt-textarea:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 3px rgba(0, 115, 170, 0.2);
+}
+
+.ai-prompt-submit-button {
+    display: inline-block;
+    background-color: #0073aa;
+    color: #ffffff;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none; /* Buttons have borders by default */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease;
+}
+
+.ai-prompt-submit-button:hover {
+    background-color: #005a87;
+    transform: translateY(-2px);
+}
+
+/* Accessibility: Hides the label visually but keeps it for screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
