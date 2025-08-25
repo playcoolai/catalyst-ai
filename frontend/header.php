@@ -6,8 +6,19 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header>
-    <h1>Catalyst AI</h1>
-    <p>My impressive portfolio.</p>
+
+<header class="site-header">
+    <div class="site-branding">
+        <a href="<?php echo esc_url(home_url('/')); ?>" rel="home">Catalyst AI</a>
+    </div>
+    <nav class="main-navigation">
+        <?php
+        wp_nav_menu(array(
+            'theme_location' => 'primary_menu',
+            'menu_id'        => 'primary-menu',
+        ));
+        ?>
+    </nav>
 </header>
-<main></main>
+
+<main class="site-content">

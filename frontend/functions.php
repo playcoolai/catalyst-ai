@@ -24,3 +24,11 @@ add_action('wp_enqueue_scripts', 'vite_enqueue_assets');
 
 // Add the helper function to the script_loader_tag filter
 add_filter('script_loader_tag', 'add_module_type_attribute', 10, 3);
+
+// Register a navigation menu
+function catalyst_ai_register_nav_menu() {
+    register_nav_menus(array(
+        'primary_menu' => __('Primary Menu', 'catalyst-ai-theme'),
+    ));
+}
+add_action('after_setup_theme', 'catalyst_ai_register_nav_menu');
